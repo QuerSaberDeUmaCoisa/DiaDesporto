@@ -1,0 +1,43 @@
+.galeria {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 36px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tabela-galeria {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-galeria th, .tabela-galeria td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.tabela-galeria th {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabela-galeria td img {
+    width: 300px;      /* Tamanho uniforme das imagens na tabela */
+    height: auto;
+    border-radius: 5px;
+}
+
+.tabela-galeria tr:hover {
+    background-color: #f1f1f1;
+}

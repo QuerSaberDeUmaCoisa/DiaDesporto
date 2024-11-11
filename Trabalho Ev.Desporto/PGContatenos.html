@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contate-nos</title>
+    <link rel="stylesheet" href="css/styleC.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="index.html"><img src="img/HOMEBTT.png" alt="Home" class="icon"></a>
+            <a href="index.html">Projeto</a>
+            <a href="PGGaleria.html">Galeria</a>
+            <a href="PGAtividades.html">Atividades</a>
+            <a href="PGSobre.html">Sobre</a>
+            <a href="PGContatenos.html">Contate-nos</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>Se você tem alguma dúvida ou comentário, preencha o formulário abaixo para enviar uma mensagem.</p>
+
+        <div class="contact-form">
+
+            <form action="https://formspree.io/f/xovqqdwj" method="POST">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="message">Sua Mensagem:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 - Contate-nos</p>
+    </footer>
+
+</body>
+</html>

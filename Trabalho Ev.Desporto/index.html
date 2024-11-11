@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galeria de Fotos - Evento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a href="PGInicio.html"><img src="img/HOMEBTT.png" alt="Home" class="icon"></a>
+            <a href="#projeto">Projeto</a>
+            <a href="PGGaleria.html">Galeria</a>
+            <a href="PGAtividades.html">Atividades</a>
+            <a href="PGSobre.html">Sobre</a>
+            <a href="PGContatenos.html">Contate-nos</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="img/BG1.jpg" alt="Banner do Evento">
+    </section>
+
+    <section class="galeria">
+        <h2>Dia do Desporto</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="img/FT2-transformed.jpeg" alt="Foto 1"></div>
+            <div class="grid-item"><img src="img/FT7.jpg" alt="Foto 2"></div>
+            <div class="grid-item"><img src="img/FT4.jpg" alt="Foto 3"></div>
+            <div class="grid-item"><img src="img/IMG_0605.webp" alt="Foto 5"></div>
+            <div class="grid-item"><img src="img/FT.webp" alt="Foto 6"></div>
+            <div class="grid-item"><img src="img/FT6.jpg" alt="Foto 7"></div>
+        </div>
+    </section>
+
+    <section id="projeto" class="info-section">
+        <h2>Projeto</h2>
+        <img style="height: 230px;width: auto;float: left" src="img/BANNERGP.jpg">
+        <p style="text-align: left; margin-right: 30px;"><br><br>Este envento foi realizado no dia 6 de abril das 9:30 e acabou as 13:30<br> Esteve a participação na atividade os alunos dos ensino primario e os organizadores foram os alunos do 2 ciclo de desporto e a direção da escola Alves Redol  <br>Este envento foi realizado para comomorar o dia Eur do Desporto<br> as crianças tiveram a fazer atividade fisica com: saltar a corda, brincar nos insuflaveis, cabo de guerra, futebol, dança com a partiçipação de uma professora de dança, lançamento de disco </p>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span id="closeModal">&times;</span>
+        <img id="modalImage" src="" alt="Zoom da imagem">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Direitos reservados</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeModal = document.getElementById("closeModal");
+
+        document.querySelectorAll(".grid-item img").forEach((img) => {
+            img.addEventListener("click", function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            });
+        });
+        closeModal.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+        modal.addEventListener("click", function(e) {
+            if (e.target !== modalImg) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
